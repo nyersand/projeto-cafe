@@ -109,6 +109,19 @@ section{
     font-size: 6rem;
 }
 
+.content h3 .main-title{
+    color: #513F40;
+    font-weight: bold;
+}
+
+.content h3 .second-title{
+    color: var(--main-color);
+}
+
+.content h3 .third-title{
+    color: #5B4846;
+}
+
 .content p{
     color: white;
     font-size: 2rem;
@@ -245,4 +258,35 @@ footer .share img{
 
 footer .share img:hover{
     background-color: var(--main-color);
+}
+
+/* Responsividade para telas até 768px */
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .header section {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .content h3 {
+        font-size: 4rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu .box-container .box {
+        padding: 2.5rem;
+    }
 }
